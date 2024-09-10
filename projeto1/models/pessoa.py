@@ -9,4 +9,4 @@ class Pessoa:
         self.endereco = endereco
 
     def __str__(self) -> str:
-        return (f"\nNome: {self.nome} \nIdade: {self.idade} \nSexo: {self.sexo} \nEndereço: {self.endereco}")
+        return (f"\nNome: {self.nome} \nIdade: {self.idade} \nSexo: {self.sexo.value} \nEndereço: {self.endereco}")
