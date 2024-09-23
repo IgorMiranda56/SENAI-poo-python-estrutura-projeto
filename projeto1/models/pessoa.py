@@ -3,6 +3,8 @@ from projeto1.models.endereco import Endereco
 
 class Pessoa:
     def __init__(self, id:int, nome: str, dataNascimento: str, telefone: str, email: str, idade: int, sexo: Sexo, endereco: Endereco) -> None:
+        if idade < 0:
+            raise ValueError("Idade não pode ser negativa.")
         self.id = id
         self.nome = nome
         self.dataNascimento = dataNascimento
